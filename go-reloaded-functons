@@ -1,0 +1,230 @@
+Go Reloaded Practice Questions (Curated Set)
+Practice problems derived from the Go Reloaded project rules.
+Question 1 – Hex to Decimal
+Write a function that converts a hexadecimal number to decimal.
+Examples:
+"1E" -> 30
+"FF" -> 255
+func hexToDecimal(hexStr string) (int64, error) {
+}
+
+
+
+
+Question 2 – Binary to Decimal
+Write a function that converts a binary number to decimal.
+Examples:
+"10" -> 2
+"1010" -> 10
+"11111111" -> 255
+func binToDecimal(binStr string) (int64, error) {
+}
+
+
+
+
+Question 3 – Capitalize Word
+Write a function that capitalizes the first letter of a word and lowers the rest.
+Examples:
+"hELLO" -> "Hello"
+"WORLD" -> "World"
+func cap(s string) string {
+}
+
+
+
+
+Question 4 – Uppercase N Words
+Write a function that converts the last N words to uppercase.
+Example:
+["How","are","you"], n=2 -> "How ARE YOU"
+func upperN(words []string, n int) string {
+}
+
+
+
+Question 5 – Detect Punctuation
+Write a function that returns true if a string is punctuation.
+Examples:
+"," -> true
+"." -> true
+"x" -> false
+func punc(s string) bool {
+}
+
+
+
+Question 6 – Fix Article Spacing
+Fix spacing around punctuation marks.
+Example:
+["hello", ",", "world", "!"] -> "hello, world!"
+func fixArticles(words []string) string {
+}
+
+
+
+
+
+Question 7 – Determine Article (a/an)
+Determine whether to use "a" or "an" before a word.
+Examples:
+"apple" -> "an"
+"book" -> "a"
+"honest" -> "an"
+func article(word string) string {
+}
+
+
+
+Question 8 – Fix Articles in Sentence
+Correct 'a' to 'an' when necessary.
+Example:
+"There it was. A amazing rock. A honest man."
+-> "There it was. An amazing rock. An honest man."
+func fixSentenceArticles(text string) string {
+}
+
+
+
+
+Question 9 – Fix Single Quotes
+Remove spaces inside single quotes.
+Examples:
+"' awesome '" -> "'awesome'"
+"' hello world '" -> "'hello world'"
+func fixSingleQuotes(text string) string {
+}
+
+
+
+Question 10 – Uppercase Conversion
+Convert a word to uppercase.
+Examples:
+"hello" -> "HELLO"
+func toUpper(s string) string {
+}
+
+
+
+
+Question 11 – Lowercase Conversion
+Convert a word to lowercase.
+Examples:
+"HELLO" -> "hello"
+func toLower(s string) string {
+}
+
+
+
+
+Question 12 – Detect Command Token
+Check if a word is a command.
+Examples:
+"(up)" -> true
+"(cap)" -> true
+"hello" -> false
+func isCommand(s string) bool {
+}
+
+
+Question 13 – Remove Element From Slice
+Remove a command from a slice.
+Example:
+["go","(up)"] -> ["GO"]
+func removeCommand(words []string, index int) []string {
+}
+
+
+
+Question 14 – Fix Punctuation Spacing
+Ensure punctuation attaches to the previous word.
+Example:
+["hello", ",", "world"] -> "hello, world"
+func fixPunctuation(words []string) string {
+}
+
+
+Question 15 – Detect Group Punctuation
+Check if punctuation is grouped.
+Examples:
+"..." -> true
+"!?" -> true
+"." -> false
+func isGroupPunctuation(s string) bool {}
+
+
+
+
+Question 16 – Handle (up, n)
+Convert the previous n words to uppercase.
+Example:
+["this","is","cool","(up,","2)"] -> "this IS COOL"
+func upperN(words []string, n int) []string {
+}
+
+
+
+Question 17 – Handle (low, n)
+Convert the previous n words to lowercase.
+Example:
+["I","LOVE","GO","(low,","2)"] -> "I love go"
+func lowerN(words []string, n int) []string {
+}
+
+
+
+Question 18 – Handle (cap, n)
+Capitalize the previous n words.
+Example:
+["welcome","to","the","brooklyn","bridge","(cap,","2)"]
+-> "welcome to the brooklyn Bridge"
+func capN(words []string, n int) []string {
+}
+
+
+
+Question 19 – Process (hex)
+Convert the word before (hex) to decimal.
+Example:
+["1E","(hex)","files"] -> ["30","files"]
+func processHex(words []string) []string {
+}
+
+
+Question 20 – Process (bin)
+Convert the word before (bin) to decimal.
+Example:
+["10","(bin)","years"] -> ["2","years"]
+func processBin(words []string) []string {
+}
+
+
+Question 21 – Normalize Spaces
+Remove extra spaces in text.
+Example:
+"hello
+world" -> "hello world"
+func normalizeSpaces(s string) string {
+}
+
+
+Question 22 – Detect Vowel
+Check if a character is a vowel.
+Examples:
+'a' -> true
+'b' -> false
+func isVowel(c byte) bool {
+}
+
+
+Question 23 – Process Full Sentence
+Apply all transformations to a sentence.
+func processSentence(text string) string {
+}
+Question 24 – Read File
+Read input from a file.func readFile(filename string) (string, error) {
+}
+Question 25 – Write File
+Write processed text to a file.
+func writeFile(filename string, data string) error {
+}

@@ -60,23 +60,3 @@ func fixSingleQuotes(t string) string {
 	x := regexp.MustCompile(`\s*'\s*`)
 	return x.ReplaceAllString(t, "'")
 }
-	
-
-func main() {
-	fmt.Println(hexToDecimal("1E"))
-	fmt.Println(hexToDecimal("FF"))
-	fmt.Println(binToDecimal("10"))
-	fmt.Println(binToDecimal("1010"))
-	fmt.Println(cap("hELLO"))
-	fmt.Println(cap("wORLD"))
-	fmt.Println(upperN([]string{"How","are","you"}, 2))
-	fmt.Println(punc(","))
-	fmt.Println(punc("."))
-	fmt.Println(punc("n"))
-	fmt.Println(fixArticles([]string{"hello", ",", "world", "!"}))
-	fmt.Println(a2An("book"))
-	fmt.Println(a2An("housr"))
-	fmt.Println(fixSentenceArticles("there it was. A amazing rock. A honest man. A book"))
-	fmt.Println(fixSingleQuotes(" 'awesome' "))
-}
- 

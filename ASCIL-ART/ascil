@@ -1,0 +1,44 @@
+package main
+
+import (
+	"fmt"
+	"os"
+	"strings"
+)
+
+func main() {
+
+	data, err := os.ReadFile("standard.txt")
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
+	}
+
+	input := os.Args[1]
+
+	lines := strings.Split(string(data), "\n")
+
+	for row := 0; row < 8; row++ {
+		for _, r := range input {
+			index := int(r-32)*9 + 1 + row
+			fmt.Print(lines[index])
+		}
+		fmt.Println()
+	}
+}
+
+// func main() {
+
+// 	data, err := os.ReadFile("standard.txt")
+// 	if err != nil {
+// 		fmt.Println("Error:", err)
+// 		return
+// 	}
+
+// 	lines := strings.Split(string(data), "\n")
+
+// 	for i := 0; i < 8; i++ {
+// 		index := (65-32)*9 + 1 + i
+// 		fmt.Println(lines[index])
+// 	}
+// }

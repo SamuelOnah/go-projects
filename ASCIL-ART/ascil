@@ -1,11 +1,3 @@
-package main
-
-import (
-	"fmt"
-	"os"
-	"strings"
-)
-
 func main() {
 
 	data, err := os.ReadFile("standard.txt")

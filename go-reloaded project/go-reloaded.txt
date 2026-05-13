@@ -86,7 +86,6 @@ func fixSentenceArticles(text string) string {
 
 
 
-
 Question 9 – Fix Single Quotes
 Remove spaces inside single quotes.
 Examples:
@@ -224,7 +223,12 @@ func processSentence(text string) string {
 Question 24 – Read File
 Read input from a file.func readFile(filename string) (string, error) {
 }
+
 Question 25 – Write File
 Write processed text to a file.
 func writeFile(filename string, data string) error {
 }
+
+
+
+This is basicallly the run down of what our go reloaded code handles 

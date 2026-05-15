@@ -12,7 +12,7 @@ func renderLines(text string, banner map[rune][]string) []string {
 		for _, char := range text {
 			charChange, ok := banner[rune(char)]
 			if !ok {
-				fmt.Println("map key no found")
+				fmt.Println("map key not found")
 				return nil
 
 			}

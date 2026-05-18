@@ -16,7 +16,7 @@ func validateInput(banner map[rune][]string) error {
 			return fmt.Errorf("missing character: '%c' (Ascii %d)", r, r)
 		}
 		if len(lines) != 8 {
-			return fmt.Errorf("character '%c' has %d lines, expacttted 8", r, len(lines))
+			return fmt.Errorf("character '%c' has %d lines, expected 8", r, len(lines))
 		}
 	}
 	return nil

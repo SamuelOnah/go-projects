@@ -38,7 +38,7 @@ func main() {
 
 	banner, err := LoadBanner("standard.txt")
 	if err != nil {
-		fmt.Println("Error loading banner:", err)
+		fmt.Println("Error loading banner: ", err)
 		return
 	}
 

@@ -37,7 +37,7 @@ func LoadBanner(filename string) (map[rune][]string, error) {
 	}
 
 	if len(banner) != 95 {
-		return nil, fmt.Errorf("expected 95 characters, got %d", len(banner))
+		return nil, fmt.Errorf("expected 95 characters,  got %d", len(banner))
 	}
 
 	return banner, nil

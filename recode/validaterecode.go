@@ -7,7 +7,7 @@ func validateInput(banner map[rune][]string) error {
 		return fmt.Errorf("banner has %d enteries,expected 95", len(banner))
 	}
 	if banner == nil {
-		return fmt.Errorf("banner is nil")
+		return fmt.Errorf("banner is empty")
 	}
 
 	for r := rune(32); r <= 126; r++ {

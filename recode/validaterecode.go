@@ -13,10 +13,10 @@ func validateInput(banner map[rune][]string) error {
 	for r := rune(32); r <= 126; r++ {
 		lines, ok := banner[r]
 		if !ok {
-			return fmt.Errorf("missing character: '%c' (Ascii %d)", r, r)
+			return fmt.Errorf("missing character")
 		}
 		if len(lines) != 8 {
-			return fmt.Errorf("character '%c' has %d lines, expected 8", r, len(lines))
+			return fmt.Errorf("character  has %d lines, expected 8", r, len(lines))
 		}
 	}
 	return nil

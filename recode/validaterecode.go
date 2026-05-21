@@ -4,7 +4,7 @@ import "fmt"
 
 func validateInput(banner map[rune][]string) error {
 	if len(banner) != 95 {
-		return fmt.Errorf("banner has %d enteries,expected 95", len(banner))
+		return fmt.Errorf("banner has %d enteries, expected 95", len(banner))
 	}
 	if banner == nil {
 		return fmt.Errorf("banner is empty")
